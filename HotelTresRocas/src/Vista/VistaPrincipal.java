@@ -6,6 +6,8 @@ import Modelo.ModeloPrincipal;
 
 public class VistaPrincipal extends javax.swing.JFrame {
 
+
+
     /**
      * Creates new form VistaPrincipal
      */

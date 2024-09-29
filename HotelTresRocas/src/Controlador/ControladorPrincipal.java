@@ -15,6 +15,10 @@ public class ControladorPrincipal implements ActionListener, MouseListener {
     private ModeloPrincipal modelo;
 
   
+
+
+
+  
     public ControladorPrincipal(ModeloPrincipal modelo) {
         this.modelo = modelo;
     }
