@@ -89,12 +89,22 @@ public class VistaLogin extends javax.swing.JFrame {
 
         btningresar.setBackground(new java.awt.Color(51, 255, 0));
         btningresar.setText("Ingresar");
+        btningresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btningresarActionPerformed(evt);
+            }
+        });
 
         btncancelar.setBackground(new java.awt.Color(255, 0, 0));
         btncancelar.setText("Cancelar");
 
         btnregistrarce.setBackground(new java.awt.Color(255, 255, 51));
         btnregistrarce.setText("Registrarce");
+        btnregistrarce.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnregistrarceActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -176,6 +186,14 @@ public class VistaLogin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btningresarActionPerformed
+
+    private void btnregistrarceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnregistrarceActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -228,7 +246,7 @@ public class VistaLogin extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
  public void setControlador(ControladorUsuario controlador) {
         btningresar.addActionListener(controlador);
-//        btnregistrarUsuario.addActionListener(controlador);
+       btnregistrarce.addActionListener(controlador);
     }
 
 
