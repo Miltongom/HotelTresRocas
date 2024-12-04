@@ -15,6 +15,7 @@ public class VistaRegistroCliente extends javax.swing.JFrame {
      */
     public VistaRegistroCliente() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

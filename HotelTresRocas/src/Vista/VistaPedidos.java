@@ -15,6 +15,7 @@ public class VistaPedidos extends javax.swing.JFrame {
      */
     public VistaPedidos() {
         initComponents();
+         setLocationRelativeTo(null);
     }
     
     VistaPedidos(VistaRestaurante aThis) {

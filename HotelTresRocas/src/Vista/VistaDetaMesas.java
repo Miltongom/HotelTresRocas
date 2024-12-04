@@ -15,6 +15,7 @@ public class VistaDetaMesas extends javax.swing.JFrame {
      */
     public VistaDetaMesas() {
         initComponents();
+         setLocationRelativeTo(null);
     }
     
     VistaDetaMesas(VistaRestaurante aThis) {

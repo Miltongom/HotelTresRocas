@@ -10,6 +10,7 @@ public class VistaRegistro extends javax.swing.JFrame {
         ModeloUsuario modelo = new ModeloUsuario(this);
         ControladorUsuario controlador = new ControladorUsuario(modelo);
         setControlador(controlador);
+         setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")

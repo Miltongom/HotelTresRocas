@@ -8,6 +8,7 @@ VistaPrincipal vp = new VistaPrincipal();
  
     public VistaActividades() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

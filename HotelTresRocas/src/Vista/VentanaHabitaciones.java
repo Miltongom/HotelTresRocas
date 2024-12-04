@@ -15,6 +15,7 @@ public class VentanaHabitaciones extends javax.swing.JFrame {
      */
     public VentanaHabitaciones() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

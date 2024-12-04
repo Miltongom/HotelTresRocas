@@ -12,6 +12,7 @@ public class VistaLogin extends javax.swing.JFrame {
         ModeloUsuario modelo = new ModeloUsuario(this);
         ControladorUsuario controlador = new ControladorUsuario(modelo);
         setControlador(controlador);
+         setLocationRelativeTo(null);
     }
 
     /**

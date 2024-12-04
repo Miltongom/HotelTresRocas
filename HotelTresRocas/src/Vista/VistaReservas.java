@@ -15,6 +15,7 @@ public class VistaReservas extends javax.swing.JFrame {
      */
     public VistaReservas() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     VistaReservas(VistaRestaurante aThis) {

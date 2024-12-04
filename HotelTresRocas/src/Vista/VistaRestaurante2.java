@@ -15,6 +15,7 @@ public class VistaRestaurante2 extends javax.swing.JFrame {
      */
     public VistaRestaurante2() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

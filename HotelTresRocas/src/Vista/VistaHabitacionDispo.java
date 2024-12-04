@@ -15,6 +15,7 @@ public class VistaHabitacionDispo extends javax.swing.JFrame {
      */
     public VistaHabitacionDispo() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**

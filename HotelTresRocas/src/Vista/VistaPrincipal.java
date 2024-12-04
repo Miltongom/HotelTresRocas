@@ -3,10 +3,16 @@ package Vista;
 
 import Controlador.ControladorPrincipal;
 import Modelo.ModeloPrincipal;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.image.ImageObserver;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class VistaPrincipal extends javax.swing.JFrame {
 
-
+ fondo f=new fondo();
 
     /**
      * Creates new form VistaPrincipal
@@ -16,6 +22,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         ModeloPrincipal modelo = new ModeloPrincipal(this);
         ControladorPrincipal controlador = new ControladorPrincipal(modelo);
         setControlador(controlador);
+         setLocationRelativeTo(null);
     }
 
     /**
@@ -27,7 +34,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanel1 = new fondo();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnAgregarCliente = new javax.swing.JMenu();
         mntmAgregarCliente = new javax.swing.JMenuItem();
@@ -41,17 +48,19 @@ public class VistaPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setForeground(new java.awt.Color(204, 204, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 501, Short.MAX_VALUE)
+            .addGap(0, 499, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 374, Short.MAX_VALUE)
+            .addGap(0, 372, Short.MAX_VALUE)
         );
 
         jMenuBar1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -157,4 +166,23 @@ public class VistaPrincipal extends javax.swing.JFrame {
          mntmAgregarCliente.addActionListener(controlador);
     }
 
+     
+     class fondo extends JPanel {
+         
+         private Image imagen;
+         
+         @Override
+         public void paint(Graphics g){
+             imagen = new ImageIcon(getClass().getResource("/img/fondo.jpg")).getImage();
+             System.out.println(imagen);
+             
+             g.drawImage(imagen, 0, 0,getWidth(),getHeight(), (ImageObserver) this);
+             
+             setOpaque(false);
+             
+             super.paint(g);
+             
+         }
+     
+     }
 }

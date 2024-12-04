@@ -8,6 +8,7 @@ public class VistaHabitaciones extends javax.swing.JFrame {
  
     public VistaHabitaciones() {
         initComponents();
+         setLocationRelativeTo(null);
     }
 
     /**
