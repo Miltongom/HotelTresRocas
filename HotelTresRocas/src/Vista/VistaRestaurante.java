@@ -16,6 +16,9 @@ public class VistaRestaurante extends javax.swing.JFrame {
     public VistaRestaurante() {
         initComponents();
     }
+    
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -214,6 +217,11 @@ public class VistaRestaurante extends javax.swing.JFrame {
         btnPedidos.setBackground(new java.awt.Color(0, 255, 255));
         btnPedidos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnPedidos.setText("Pedidos");
+        btnPedidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPedidosActionPerformed(evt);
+            }
+        });
 
         jButton7.setBackground(new java.awt.Color(153, 153, 153));
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -334,6 +342,10 @@ public class VistaRestaurante extends javax.swing.JFrame {
        cerrarVentanaVistaRestaurante();
     }//GEN-LAST:event_btnSalirActionPerformed
 
+    private void btnPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPedidosActionPerformed
+        irAVistaPedido();
+    }//GEN-LAST:event_btnPedidosActionPerformed
+
     
        private void cerrarVentanaVistaRestaurante() {
         this.dispose();  
@@ -349,6 +361,10 @@ public class VistaRestaurante extends javax.swing.JFrame {
         new VistaDetaMesas().setVisible(true); 
     }
 
+          
+    public void irAVistaPedido(){
+        new VistaPedidos().setVisible(true);
+    }
     
     
     /**

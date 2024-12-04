@@ -188,7 +188,7 @@ public class VistaReservas extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void cerrarVentanaReservas() {
-        this.dispose();  // Cierra solo la ventana de "Integrantes"
+        this.dispose();  
     }
 
     /**
