@@ -9,6 +9,9 @@ package Vista;
  * @author diego
  */
 public class VistaRegistroCliente extends javax.swing.JFrame {
+    VistaPrincipal vp = new VistaPrincipal();
+
+    
 
     /**
      * Creates new form VistaRegistroCliente
@@ -224,6 +227,8 @@ public class VistaRegistroCliente extends javax.swing.JFrame {
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         // TODO add your handling code here:
+            vp.setVisible(true);
+            dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**

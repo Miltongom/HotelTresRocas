@@ -41,8 +41,11 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         mntmReservar = new javax.swing.JMenu();
+        mntmReservas = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
+        mntmActividades = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        mntmRestaurante = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -80,12 +83,28 @@ public class VistaPrincipal extends javax.swing.JFrame {
         mntmReservar.setText("Reservar Ahora");
         jMenu3.add(mntmReservar);
 
+        mntmReservas.setText("Reservas");
+        jMenu3.add(mntmReservas);
+
         jMenuBar1.add(jMenu3);
 
         jMenu5.setText("Actividades");
+
+        mntmActividades.setText("Ver Actividades");
+        jMenu5.add(mntmActividades);
+
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Restaurante");
+
+        mntmRestaurante.setText("Restaurante");
+        mntmRestaurante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mntmRestauranteActionPerformed(evt);
+            }
+        });
+        jMenu6.add(mntmRestaurante);
+
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("Pagos");
@@ -109,6 +128,10 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mntmRestauranteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mntmRestauranteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mntmRestauranteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,8 +177,11 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu mnAgregarCliente;
+    public javax.swing.JMenuItem mntmActividades;
     public javax.swing.JMenuItem mntmAgregarCliente;
     public javax.swing.JMenu mntmReservar;
+    public javax.swing.JMenuItem mntmReservas;
+    public javax.swing.JMenuItem mntmRestaurante;
     // End of variables declaration//GEN-END:variables
 
     
@@ -164,6 +190,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         mntmReservar.addMouseListener(controlador);
         mntmAgregarCliente.addMouseListener(controlador);
          mntmAgregarCliente.addActionListener(controlador);
+         mntmActividades.addMouseListener(controlador);
+         mntmActividades.addActionListener(controlador);
+           mntmRestaurante.addMouseListener(controlador);
+         mntmRestaurante.addActionListener(controlador);
+         mntmReservas.addMouseListener(controlador);
+         mntmReservas.addActionListener(controlador);
+         
     }
 
      

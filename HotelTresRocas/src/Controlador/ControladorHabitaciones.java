@@ -2,8 +2,10 @@
 package Controlador;
 
 import Modelo.ModeloHabitaciones;
+import Modelo.ModeloPrincipal;
 
 import Vista.VistaPrincipal;
+import Vista.VistaRestaurante;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -13,28 +15,19 @@ public class ControladorHabitaciones implements ActionListener,MouseListener{
     
    
    private ModeloHabitaciones modelo;
+
     
     public ControladorHabitaciones( ModeloHabitaciones modelo){
             this.modelo = modelo;}
     
-  
+   
        
     
 
    
     public void actionPerformed(ActionEvent e){
       
-        if(e.getActionCommand().equals(modelo.getVista().btnCancelar)){
-           VistaPrincipal vprincipal = new VistaPrincipal();
-            
-            // Mostrar la vista principal
-            vprincipal.setVisible(true);
-            
-            // Cerrar la vista de habitaciones
-            modelo.getVista().dispose();
     
-          
-        }
       
     }
 
@@ -45,16 +38,7 @@ public class ControladorHabitaciones implements ActionListener,MouseListener{
 
     @Override
     public void mousePressed(MouseEvent e) {
-        if(e.getComponent().equals(modelo.getVista().btnCancelar)){
-            VistaPrincipal vprincipal = new VistaPrincipal();
-            
-            // Mostrar la vista principal
-            vprincipal.setVisible(true);
-            
-            // Cerrar la vista de habitaciones
-            modelo.getVista().dispose();
-      
-    }
+        
     }
 
     @Override
@@ -69,6 +53,10 @@ public class ControladorHabitaciones implements ActionListener,MouseListener{
 
     @Override
     public void mouseExited(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private void dispose() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

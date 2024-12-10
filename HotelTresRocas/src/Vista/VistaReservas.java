@@ -9,7 +9,7 @@ package Vista;
  * @author Milton Gómez
  */
 public class VistaReservas extends javax.swing.JFrame {
-
+VistaPrincipal vp = new VistaPrincipal();
     /**
      * Creates new form VistaReservas
      */
@@ -185,12 +185,12 @@ public class VistaReservas extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        cerrarVentanaReservas();
+         
+        vp.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnSalirActionPerformed
 
-    private void cerrarVentanaReservas() {
-        this.dispose();  
-    }
+  
 
     /**
      * @param args the command line arguments
@@ -240,4 +240,8 @@ public class VistaReservas extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    private void dipose() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
